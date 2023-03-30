@@ -22,7 +22,7 @@ namespace EvidentaCarti_Consola1 {
                 Console.WriteLine("F. Afisare carte din fisier");
                 Console.WriteLine("S. Salvare carte in fisier");
                 Console.WriteLine("X. Inchidere program");
-                Console.WriteLine("Z. Informatie autor");
+                Console.WriteLine("Z. Informatie autor proiect");
                 Console.WriteLine("Alegeti o optiune");
                 optiune = Console.ReadLine();
                 switch (optiune.ToUpper())

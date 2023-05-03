@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Configuration;
+using System.IO;
 using LibrarieModele;
 using NivelStocareDate;
 
@@ -43,7 +44,7 @@ namespace EvidentaCarti_Consola1 {
                     case "S":
                         int idBook = nrBook + 1;
                         carte.SetIdBook(idBook);
-                       
+
                         adminCarti.AddCarte(carte);
 
                         nrBook = nrBook + 1;
@@ -67,7 +68,7 @@ namespace EvidentaCarti_Consola1 {
 
         public static void AfisareCarte(Carte carte)
         {
-            string infoCarte = string.Format("Cartea cu id-ul #{0} este: {1}; autor: {2}",
+            string infoCarte = string.Format("Cartea cu id-ul #{0} este: {1}; autor: {2} si nota : {3}",
                    carte.GetIdBook(),
                    carte.GetNume() ?? " NECUNOSCUT ",
                    carte.GetAutor() ?? " NECUNOSCUT ");
@@ -96,5 +97,6 @@ namespace EvidentaCarti_Consola1 {
 
             return carte;
         }
+
     }
 }

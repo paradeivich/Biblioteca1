@@ -11,7 +11,9 @@ namespace EvidentaCarti_Consola1 {
         {
             Carte carte = new Carte();
             string numeFisier = ConfigurationManager.AppSettings["NumeFisier"];
-            AdministrareCarti_FisierText adminCarti = new AdministrareCarti_FisierText(numeFisier);
+            string locatieFisierSolutie= Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.FullName;
+            string caleCompletaFisier = locatieFisierSolutie + "\\" + numeFisier;
+            AdministrareCarti_FisierText adminCarti = new AdministrareCarti_FisierText(caleCompletaFisier);
             int nrBook = 0;
             adminCarti.GetCarte(out nrBook);
 
@@ -68,7 +70,7 @@ namespace EvidentaCarti_Consola1 {
 
         public static void AfisareCarte(Carte carte)
         {
-            string infoCarte = string.Format("Cartea cu id-ul #{0} este: {1}; autor: {2} si nota : {3}",
+            string infoCarte = string.Format("Cartea cu id-ul #{0} este: {1}; autor: {2}",
                    carte.GetIdBook(),
                    carte.GetNume() ?? " NECUNOSCUT ",
                    carte.GetAutor() ?? " NECUNOSCUT ");

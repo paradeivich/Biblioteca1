@@ -7,26 +7,19 @@ namespace LibrarieModele
         private const char SEPARATOR_PRINCIPAL_FISIER = ';';
         private const char SEPARATOR_SECUNDAR_FISIER = ' ';
         private const bool SUCCES = true;
-        public const int NOTA_MINIMA = 1;
-        public const int NOTA_MAXIMA = 10;
+       
 
         private const int ID = 0;
         private const int NUME = 1;
         private const int AUTOR = 2;
         //private const int NOTE = 3;
 
-        //date membre private
-        //int[] note;
+        
 
         //proprietati auto-implemented
         private int IdBook { get; set; }    
         private string Nume { get; set; }   
         private string Autor { get; set; }
-
-        //public int[]GetNote()
-        //{
-          //  return (int[])note.Clone();
-        //}
 
         //constructor implicit
         public Carte()

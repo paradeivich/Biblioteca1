@@ -1,5 +1,6 @@
 ﻿using LibrarieModele;
 using System.IO;
+using System;
 
 namespace NivelStocareDate
 {
@@ -37,6 +38,8 @@ namespace NivelStocareDate
                     carti[nrBook++] = new Carte(linieFisier);
                 }
             }
+
+                Array.Resize(ref carti, nrBook);
 
             return carti;
         }

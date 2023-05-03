@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvidentaCarti_Consola", "EvidentaStudenti_Consola\EvidentaCarti_Consola1.csproj", "{DD43BD77-F722-4F8F-A4B0-D7FDBD73B02F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvidentaCarti_Consola1", "EvidentaStudenti_Consola\EvidentaCarti_Consola1.csproj", "{DD43BD77-F722-4F8F-A4B0-D7FDBD73B02F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibrarieModele", "LibrarieModele\LibrarieModele.csproj", "{F1211EC3-AA38-43F2-AB19-D0549CA25F03}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NivelStocareData", "NivelStocareData\NivelStocareData.csproj", "{C00D3A72-7CEE-4781-8ACD-A61ECEC84DF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfataUtilizator_WindowsForms", "InterfataUtilizator_WindowsForms.\InterfataUtilizator_WindowsForms.csproj", "{6E8625B0-C1D8-4BA4-9241-93A70E2A2212}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{C00D3A72-7CEE-4781-8ACD-A61ECEC84DF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C00D3A72-7CEE-4781-8ACD-A61ECEC84DF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C00D3A72-7CEE-4781-8ACD-A61ECEC84DF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E8625B0-C1D8-4BA4-9241-93A70E2A2212}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E8625B0-C1D8-4BA4-9241-93A70E2A2212}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E8625B0-C1D8-4BA4-9241-93A70E2A2212}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E8625B0-C1D8-4BA4-9241-93A70E2A2212}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
